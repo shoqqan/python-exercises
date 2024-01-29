@@ -47,9 +47,13 @@ print(filter_prime(numbers))
 # 5
 
 def permutations(string):
-    print(list(itertools.permutations(string)))
+    list_of_chars=list(itertools.permutations(string))
+    list_of_strings=[]
+    for chars in list_of_chars:
+        list_of_strings.append(''.join(chars))
+    print(list_of_strings)
 
-
+permutations('hello')
 # 6
 
 def reverse_sentence(sentence):
