@@ -78,5 +78,5 @@ def is_prime(num):
     return True
 
 
-def filter_list(list):
-    return list(filter(lambda x: is_prime(x), list))
+def filter_list(list_for_filter):
+    return list(filter(lambda x: is_prime(x), list_for_filter))
